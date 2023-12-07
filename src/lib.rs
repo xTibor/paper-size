@@ -84,8 +84,8 @@ impl Format {
             Format::IsoB(n) => metric_size(*n, 2.0.root(2.0), 1000.0),
             Format::IsoC(n) => metric_size(*n, 8.0.root(8.0), 1000.0),
 
-            Format::JisA(n) => metric_size(*n, 2.0.root(4.0), (1000.0 * 1000.0).root(2.0)),
-            Format::JisB(n) => metric_size(*n, 2.0.root(4.0), (1000.0 * 1500.0).root(2.0)),
+            Format::JisA(n) => metric_size(*n, 2.0.root(4.0) * 4.0.root(2.0) / 2.0, 1000.0),
+            Format::JisB(n) => metric_size(*n, 2.0.root(4.0) * 6.0.root(2.0) / 2.0, 1000.0),
 
             Format::SisA(n) => metric_size(*n, 2.0.root(16.0).powf( 4.0), 1000.0),
             Format::SisE(n) => metric_size(*n, 2.0.root(16.0).powf( 5.0), 1000.0),
