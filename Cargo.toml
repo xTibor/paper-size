@@ -1,0 +1,8 @@
+[package]
+name = "paper-size"
+version = "0.1.0"
+authors = ["Nagy Tibor <xnagytibor@protonmail.com>"]
+license = "MIT"
+edition = "2021"
+
+[dependencies]
